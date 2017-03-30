@@ -34,7 +34,7 @@ $('.navlinks a').on('click', function(e) {
           .fadeIn(0)
           .end()
           .appendTo('#slider');
-    }, 4000);
+    }, 3000);
 
 
 $(window).on('scroll', function () {
@@ -54,6 +54,14 @@ $('.hamburger').on('click', function (event) {
   $('.navlinks').slideToggle();
 });
 
+// STATEMENT LINKS
+
+$('.statementlink').click(function() {
+    $('.statement').slideToggle('fast');
+    return false;
+});
+
+// MODAL GALLERIES
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";

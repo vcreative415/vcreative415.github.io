@@ -102,6 +102,7 @@ h3 {
 p {
 	font-family:'kameron',sans-serif;
 	font-size:16px;
+	text-align:justify;
 }
 ul li p {
 	font-family:'kameron',sans-serif;
@@ -109,7 +110,7 @@ ul li p {
 	list-style-type:none;
 
 }
-strong {
+strong, a {
 	font-family:'kameron',sans-serif;
 	font-size:15px;
 	color: #ff0000;
@@ -195,13 +196,16 @@ strong {
   margin-bottom: 0;
 }
 
+/*----- ARTIST STATEMENTS --------*/
+div.statement {
+	display:none;
+	padding-bottom:28px;
+}
 
 /*----- MODAL GALLERY CONTENT -----*/
-.row > .column {
+.row > .column, .column2, .column3 {
   padding: 0 8px 28px 0;
-}
-.row > .column2, .column3 {
-  padding: 0 8px 28px 0;
+  text-align:center;
 }
 
 .row:after {
@@ -209,7 +213,6 @@ strong {
   display: table;
   clear: both;
 }
-
 .column {
   float: left;
   width:25%;
