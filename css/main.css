@@ -13,9 +13,10 @@ img {
 }
 .title {
 	display:none;
+	text-align:right;
 	background-color:#6b6c71;
 	color:#ffffff;
-	padding-left:14px;
+	padding-right:14px;
 
 }
 nav {
@@ -74,14 +75,13 @@ nav a:hover {
 section {
 	margin:50px 35px 100px 35px;
 }
-
-.exhibitions {
-	display:flex;
-	flex-direction:row;
+#chronology {
+	margin-left:32px;
 }
-
 article {
 	margin-left:18px;
+	font-family:'kameron', sans-serif;
+	font-size:14px;
 }
 
 
@@ -103,18 +103,237 @@ p {
 	font-family:'kameron',sans-serif;
 	font-size:16px;
 }
-ul li {
+ul li p {
 	font-family:'kameron',sans-serif;
-	font-size:16px;
+	font-size:14px;
 	list-style-type:none;
 
 }
 strong {
-	font-size:16px;
+	font-family:'kameron',sans-serif;
+	font-size:15px;
 	color: #ff0000;
 	letter-spacing:1px;
-	margin-right: 15px;
-	margin-left: 15px;
+}
+
+/*------- TIMELINE -------*/
+.timeline {
+  line-height: 1.4em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
+  line-height: inherit;
+}
+
+/*----- TIMELINE ITEM -----*/
+.timeline-item {
+  padding-left: 40px;
+  position: relative;
+}
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+/*----- TIMELINE INFO -----*/
+.timeline-info {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0 0 .5em 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*----- TIMELINE MARKER -----*/
+.timeline-marker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+}
+.timeline-marker:before {
+  background: #FF6B6B;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 10px;
+  transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.timeline-marker:after {
+  content: "";
+  width: 3px;
+  background: #CCD5DB;
+  display: block;
+  position: absolute;
+  top: 24px;
+  bottom: 0;
+  left: 6px;
+}
+.timeline-item:last-child .timeline-marker:after {
+  content: none;
+}
+
+.timeline-item:not(.period):hover .timeline-marker:before {
+  background: transparent;
+  border: 3px solid #FF6B6B;
+}
+
+/*----- TIMELINE CONTENT -----*/
+.timeline-content {
+  padding-bottom: 15px;
+}
+.timeline-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*----- MODAL GALLERY CONTENT -----*/
+.row > .column {
+  padding: 0 8px 28px 0;
+}
+.row > .column2, .column3 {
+  padding: 0 8px 28px 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width:25%;
+}
+.column2, .column3 {
+	float: left;
+	width:33.3%;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 185px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  position: absolute;
+  top: 130px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides2 {
+	display:none;
+}
+.mySlides3 {
+	display:none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+	left: 25%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 25%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo, img.demo2, img.demo3 {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover, .demo2:hover, .demo3:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 @media screen and (max-width: 1416px) {
@@ -127,7 +346,7 @@ strong {
 		margin-top:-16px;
 	}
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 953px) {
 	.slider-header {
 		display:none;
 	}
@@ -135,16 +354,85 @@ strong {
 		display:block;
 		margin-top:-16px;
 	}
+	img.photo {
+		width:65%;
+	}
 	.navlinks {
 		display:none;
 	}
-	nav a {
-		font-size:12px;
+		nav a {
+		font-size:14px;
+		display:block;
+		letter-spacing:2px;
 		text-decoration:underline;
 	}
 	.hamburger {
 		display:block;
 	}
+
+}
+@media screen and (max-width: 425px) {
+	.slider-header {
+		display:none;
+	}
+	.title {
+		display:block;
+		margin-top:-16px;
+	}
+	h2 {
+		font-size:22px;
+	}
+	.navlinks {
+		display:none;
+	}
+	#navicon {
+		width:6%;
+	}
+	img.photo {
+		width:60%;
+
+	}
+
+	nav a {
+		font-size:11px;
+		font-weight:bold;
+		text-decoration:underline;
+		display:block;
+	}
+	.hamburger {
+		display:block;
+	}
+	ul li p {
+		font-size:11px;
+	}
+	#chronology {
+		margin-left:8px;
+	}
+	.timeline-marker:before {
+		width:8px;
+		height:8px;
+	}
+	article {
+		font-size:11px;
+		font-family:'kameron', sans-serif;
+	}
+	strong {
+		font-size:12px;
+	}
+	.prev {
+		left: 5%;
+	}
+	.next {
+		right: 5%;
+	}
+	.close {
+		top: 165px;
+	}
+	.modal-content {
+		margin-top: 18px;
+	}
+
+
 }
 
 });
