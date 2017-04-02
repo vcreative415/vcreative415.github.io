@@ -60,6 +60,10 @@ $('.statementlink').click(function() {
     $('.statement').slideToggle('fast');
     return false;
 });
+$('.statementlink2').click(function() {
+    $('.statement2').slideToggle('fast');
+    return false;
+});
 
 // MODAL GALLERIES
 
@@ -159,7 +163,7 @@ function showSlides3(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides3");
   var dots = document.getElementsByClassName("demo3");
-  var caption2Text = document.getElementById("caption3");
+  var caption3Text = document.getElementById("caption3");
   if (n > slides.length) {slideIndex3 = 1}
   if (n < 1) {slideIndex3 = slides.length}
   for (i = 0; i < slides.length; i++) {

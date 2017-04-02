@@ -95,18 +95,22 @@ h2 {
 }
 h3 {
 	font-family:'rakkas', cursive;
-	font-size:30px;
+	font-size:24px;
 	color: #ff0000;
 	letter-spacing:1px;
 }
 p {
 	font-family:'kameron',sans-serif;
-	font-size:16px;
+	font-size:15px;
 	text-align:justify;
+}
+p.bio {
+	text-align:left;
+	font-size:16px;
 }
 ul li p {
 	font-family:'kameron',sans-serif;
-	font-size:14px;
+	font-size:15px;
 	list-style-type:none;
 
 }
@@ -200,8 +204,13 @@ strong, a {
 div.statement {
 	display:none;
 	padding-bottom:28px;
+	font-style:italic;
 }
-
+div.statement2 {
+	display:none;
+	padding-bottom:28px;
+	font-style:italic;
+}
 /*----- MODAL GALLERY CONTENT -----*/
 .row > .column, .column2, .column3 {
   padding: 0 8px 28px 0;
@@ -338,8 +347,12 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-
-@media screen and (max-width: 1416px) {
+@media screen and (max-width: 1600px) {
+	.title {
+		display:none;
+	}
+}
+@media screen and (max-width: 1410px) {
 
 	.slider-header {
 		display:none;
@@ -357,9 +370,6 @@ img.hover-shadow {
 		display:block;
 		margin-top:-16px;
 	}
-	img.photo {
-		width:65%;
-	}
 	.navlinks {
 		display:none;
 	}
@@ -372,7 +382,20 @@ img.hover-shadow {
 	.hamburger {
 		display:block;
 	}
-
+	img.photo {
+		max-width:65%;
+	}
+	img#photo2 {
+		max-width:50%;
+	}
+}
+@media screen and (max-width: 665px) {
+	img.photo {
+		max-width:50%;
+	}
+	img#photo2 {
+		max-width:35%;
+	}
 }
 @media screen and (max-width: 425px) {
 	.slider-header {
@@ -392,8 +415,11 @@ img.hover-shadow {
 		width:6%;
 	}
 	img.photo {
-		width:60%;
+		max-width:65%;
 
+	}
+	img#photo2 {
+		max-width:50%;
 	}
 
 	nav a {
