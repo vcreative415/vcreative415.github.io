@@ -191,3 +191,15 @@ $('.articlelink').click(function() {
     $('.article1').slideToggle('fast');
     return false;
 });
+$('.articlelink2').click(function() {
+    $('.article2').slideToggle('fast');
+    return false;
+});
+$('.articlelink3').click(function() {
+    $('.article3').slideToggle('fast');
+    return false;
+});
+$('.articlelink4').click(function() {
+    $('.article4').slideToggle('fast');
+    return false;
+});

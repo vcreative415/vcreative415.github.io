@@ -353,6 +353,18 @@ div.article1 {
 	display:none;
 	padding-bottom:22px;
 }
+div.article2 {
+	display:none;
+	padding-bottom:22px;
+}
+div.article3 {
+	display:none;
+	padding-bottom:22px;
+}
+div.article4 {
+	display:none;
+	padding-bottom:22px;
+}
 
 
 @media screen and (max-width: 1600px) {
