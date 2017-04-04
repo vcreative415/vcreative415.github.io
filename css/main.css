@@ -408,6 +408,12 @@ img.hover-shadow {
 	h2 {
 		font-size:22px;
 	}
+	h3 {
+		font-size:19px;
+	}
+	p, p.bio {
+		font-size:14px;
+	}
 	.navlinks {
 		display:none;
 	}
@@ -445,8 +451,8 @@ img.hover-shadow {
 		font-size:11px;
 		font-family:'kameron', sans-serif;
 	}
-	strong {
-		font-size:12px;
+	strong, a {
+		font-size:13px;
 	}
 	.prev {
 		left: 5%;
