@@ -148,7 +148,6 @@ strong, a {
   font-weight: 700;
   letter-spacing: 3px;
   margin: 0 0 .5em 0;
-  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -347,6 +346,15 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
+
+
+/* ARTICLE LINKS */
+div.article1 {
+	display:none;
+	padding-bottom:22px;
+}
+
+
 @media screen and (max-width: 1600px) {
 	.title {
 		display:none;
@@ -395,6 +403,32 @@ img.hover-shadow {
 	}
 	img#photo2 {
 		max-width:35%;
+	}
+	h2 {
+		font-size:22px;
+	}
+	h3 {
+		font-size:19px;
+	}
+	p, p.bio {
+		font-size:14px;
+	}
+	ul li p {
+		font-size:11px;
+	}
+	#chronology {
+		margin-left:8px;
+	}
+	.timeline-marker:before {
+		width:8px;
+		height:8px;
+	}
+	article {
+		font-size:11px;
+		font-family:'kameron', sans-serif;
+	}
+	strong, a {
+		font-size:13px;
 	}
 }
 @media screen and (max-width: 425px) {
