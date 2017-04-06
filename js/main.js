@@ -1,17 +1,5 @@
 // Make it rain!
 
-$(document).ready(function(){    
-    //Check if the current URL contains '#'
-    if(document.index.html.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.index.html+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
-});
-
 // Smooth scroll this mother!
 
 // Do it when someone clicks a nav link
