@@ -2,9 +2,9 @@
 
 $(document).ready(function(){    
     //Check if the current URL contains '#'
-    if(document.vcreative.github.io.indexOf("#")==-1){
+    if(document.index.html.indexOf("#")==-1){
         // Set the URL to whatever it was plus "#".
-        url = document.vcreative.github.io+"#";
+        url = document.index.html+"#";
         location = "#";
 
         //Reload the page
